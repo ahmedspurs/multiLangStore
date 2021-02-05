@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    --background-color:white;
+    --text-color:#1f1f20;
+    --secondary-color: white;
+    --icon-color: #59299b;
+    --hover-color:#1f1f20 ;
+
+}
+
+.dark{
+    --background-color:#130f1f;
+    --text-color:white;
+    --secondary-color: #241f31;
+    --icon-color: rgb(221, 168, 21);
+    --hover-color: white;
+
+}
+nav.navbar{
+    background-color: var(--secondary-color);
+}
+
+
+nav.navbar .navbar-brand{
+    color: var(--text-color);
+    font-weight: 600;
+}
+nav.navbar ul.navbar-nav li a{
+    color: var(--text-color);
+    font-weight: 600;
+}
+nav.navbar ul.navbar-nav li a:hover{
+    color: var(--hover-color);
+    
+}
+nav.navbar ul li a i{
+    color: var(--text-color);
+    font-weight: 600;
+}
+nav.navbar button.navbar-toggler span{
+    color: var(--text-color);
+}
+/* footer */
+footer{
+    background-color: var(--secondary-color);
+}
+footer.page-footer a i{
+
+    color: var(--text-color);
+}
+
+footer.page-footer .footer-copyright {
+    color: var(--text-color);
+
+}
+footer.page-footer .footer-copyright a{
+    color: var(--text-color);
+
+}
+
+/* home section */
+.home{
+    background-color: var(--background-color);
+    margin-top: 10px;
+}
+.home section.about-us .about-content {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.home section.about-us .about-content h2,p{
+    color: var(--text-color);
+}
+.home section.about-us .about-content a{
+    color: orangered;
+}
+
+
+.home section.about-us  .about-img{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.home section.about-us  .about-img img{
+    width: 300px;
+    height: 300px;
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+
+/* service section */
+
+section.ser .ser-icon i{
+    color: var(--icon-color);
+    font-size: 40px;
+    margin: 15px;
+
+}
+section.ser .ser-cont{
+padding:20px;
+transition: all .2s;
+}
+section.ser .ser-cont:hover{
+    box-shadow: 2px 2px 8px rgb(61, 60, 60);
+
+}
+section.ser h2{
+    color: var(--text-color);
+}
+
+section.ser .ser-cont h2,p{
+    color: var(--text-color);
+}
+
+.bor
+{
+    border-top: .2px solid rgb(192, 190, 190);
+    height: .5px;
+    background-color: var(--secondary-color);
+}
+
+/* client */
+
+.clint{
+    margin-top: 30px;
+    position: relative;
+}
+.clint .jumbotron{
+    width: 100%;
+    margin: 0;
+}
+/* .clint .jumbotron h2,p{
+    color: white;
+} */
+
+
+
+/* product img */
+
+section.product h2{
+    color: var(--text-color);
+}
+section.product button{
+    color: var(--text-color) !important;
+    box-shadow: 0px !important;
+    font-weight: 600;
+
+}
+
+section.product .row .col-md-3{
+}
+section.product .row img{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+/* store section */
+.store{
+    background-color: var(--background-color);
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+header .menu i{
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 40px;
+    display: none;
+    text-align: center;
+}
+
+
+.navigation{
+    background-color:var(--secondary-color);
+    /* width: 250px; */
+    margin-top:20px ;
+    border-right: 1px solid rgb(59, 59, 59);
+    /* display: none; */
+}
+
+.navigation .icon{
+    text-align: right;
+    display: none;
+}
+
+.navigation .icon i.minm{
+
+    padding: 5px 8px;
+    font-size: 25px;
+    color: var(--text-color);
+    cursor: pointer;
+    /* display: none; */
+}
+
+.navigation .icon i.minm:hover{
+    background-color: rgb(16, 36, 41);
+    color: rgb(194, 192, 192);
+}
+
+.navigation h2.title{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 7px;
+    text-align: center;
+
+    width: 70%;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.navigation ul{
+    list-style: none;
+    padding: 10px;
+    margin-top: -15px;
+}
+
+.navigation ul li{
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+
+.navigation ul li:last-child{
+    border: none;
+}
+
+.navigation ul .accordion button  a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+.navigation ul .accordion button{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+.navigation ul .accordion .collapse .li-acc a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.navigation ul li a:hover{
+    text-decoration: none;
+}
+
+.navigation ul li a i{
+    margin-right: 6px;
+}
+
+@media(max-width:700px){
+    header .menu i{
+        display: block;
+    }
+    .navigation{
+        display: none;
+        height: 50%;
+    }
+
+    .navigation .icon{
+        text-align: right;
+        margin-top: 20px;
+        display: block;
+    }
+
+}
+
+.classic-tabs ul.nav li.nav-item a{
+    color: var(--text-color);
+    /* transition: all 1s; */
+}
+
+.classic-tabs ul.nav li.nav-item a:hover{
+    border-bottom: 1px solid rgb(77, 18, 95);
+
+}
+
+.classic-tabs .tab-content .tab-pane .card{
+    background: var(--secondary-color);
+    margin-top: 20px;
+}
+.classic-tabs .tab-content .tab-pane .card img{
+    width: 100%;
+    height: 300px;
+}
+.classic-tabs .tab-content .tab-pane .card .card-body *{
+    color: var(--text-color) !important;
+}
+.classic-tabs .tab-content .tab-pane .card .button-card a.btn{
+    border-radius: 100px !important;
+    font-weight: 600;
+}
+
+/* contact section */
+.cont{
+    background: var(--background-color);
+    overflow: hidden;
+}
+
+.cont div.container{
+    margin-top: 80px;
+}
+.cont div.container h2{
+    color: var(--text-color);
+
+}
+.cont div.container .row form label{
+    color: var(--text-color);
+}
+.cont div.container i{
+    color: var(--icon-color);
+}
+
+.cont div.container .row a.btn{
+    color: var(--text-color) !important;
+    font-weight: 600;
+
+}

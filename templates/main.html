@@ -1,0 +1,131 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg fixed-top {{darkMode}}">
+    <a class="navbar-brand" href="#">WEEKO STORE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.home"><i class="fa fa-home"></i> {{navbar[langInd].home}}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.store"><i class="fa fa-shopping-cart" aria-hidden="true"></i> {{navbar[langInd].store}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.contact"><i class="fa fa-envelope"></i> {{navbar[langInd].contact}}</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+
+        <!-- lang section -->
+  
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" ng-click="langInd=1">
+                <img src="../img/download.jpeg" width="30px" alt="">
+                العربيه
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" ng-click="langInd=0">
+                <img src="../img/download.png" width="30px" alt="">
+                English
+            </a>
+          </li>
+      <!-- end lang section -->
+   
+
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light"  ng-click="darkMode='dark';lable=false">
+              <i class="fa fa-moon"></i>
+            </a>
+          </li>
+
+        <li class="nav-item" style="margin-top: 4px;"">
+          
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" ng-checked="lable" disabled id="customSwitches">
+            <label class="custom-control-label" for="customSwitches"></label>
+          </div>
+        </li>
+
+
+        <li class="nav-item" ng-click="darkMode='';lable=true">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fa fa-sun"></i>
+            </a>
+        </li>
+
+
+        
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+  <div ui-view="sub"></div>
+
+  <!-- footer -->
+  <div class="container text-center">
+    <div class="bor"></div>
+</div>
+
+ 
+<footer class="page-footer font-small {{darkMode}}">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a >
+              <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a >
+              <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a \>
+              <i class="fab fa-google-plus-g fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a >
+              <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a >
+              <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a >
+              <i class="fab fa-pinterest fa-lg fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">{{footer[langInd].text}}
+      <a href="https://mdbootstrap.com/"> WEEKO STORE</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->

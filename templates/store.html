@@ -1,0 +1,154 @@
+<div class="{{darkMode}} store">
+    <setion class="container store-sec">
+        <div class="row">
+            <div class="col-md-2 wow animate__fadeIn">
+                <header>
+                    <div class="menu">
+                        <i id="showNav" class="fa fa-align-left"></i>
+                    </div>
+                    <section class="navigation">
+                    <div class="icon">
+                    <i id="hideNav" class="fa fa-times minm"></i>
+                    </div>
+                    <h2 class="title">{{sideNav[langInd].title}}</h2>
+                    <div class="items">
+                        <ul>
+                            <div class="accordion" id="accordionExample275">
+                                      <button class="" type="button" data-toggle="collapse" data-target="#collapseOne2"
+                                        aria-expanded="true" aria-controls="collapseOne2">
+                                        <a href="" class="dec"><i ></i> {{sideNav[langInd].dropTi[0]}} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                      </button>
+                                  <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2"
+                                    data-parent="#accordionExample275">
+                                        <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[0]}}</a></li>
+                                        <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[1]}}</a></li>
+                                  </div>
+                            </div>
+
+                            <div class="accordion" id="accordionExample275">
+                                    <button class="" type="button" data-toggle="collapse" data-target="#collapseOne4"
+                                    aria-expanded="true" aria-controls="collapseOne2">
+                                    <a href="" class="dec"><i ></i> {{sideNav[langInd].dropTi[1]}} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    </button>
+                                <div id="collapseOne4" class="collapse" aria-labelledby="headingOne2"
+                                data-parent="#accordionExample275">
+                                    <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[0]}}</a></li>
+                                    <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[1]}}</a></li>
+                                </div>
+                            </div>
+
+                            <div class="accordion" id="accordionExample275">
+                                    <button class="" type="button" data-toggle="collapse" data-target="#collapseOne3"
+                                    aria-expanded="true" aria-controls="collapseOne2">
+                                    <a href="" class="dec"><i></i> {{sideNav[langInd].dropTi[2]}} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    </button>
+                                <div id="collapseOne3" class="collapse" aria-labelledby="headingOne2"
+                                data-parent="#accordionExample275">
+                                    <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[0]}}</a></li>
+                                    <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[1]}}</a></li>
+                                </div>
+                           </div>
+
+
+                      <div class="accordion" id="accordionExample275">
+                                <button class="" type="button" data-toggle="collapse" data-target="#collapseOne1"
+                                aria-expanded="true" aria-controls="collapseOne2">
+                                <a href="" class="dec"><i ></i> {{sideNav[langInd].dropTi[3]}} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                </button>
+                            <div id="collapseOne1" class="collapse" aria-labelledby="headingOne2"
+                            data-parent="#accordionExample275">
+                                <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[0]}}</a></li>
+                                <li class="li-acc"><a href=""><i class="fa fa-home"></i>{{sideNav[langInd].dropIe[1]}}</a></li>
+                            </div>
+                       </div>
+                               
+                        </ul>
+                    </div>
+                </section>
+                </header>
+            </div>
+            <div class="col-md-10 wow animate__fadeIn">
+
+                    <!-- Classic tabs -->
+<div class="classic-tabs mx-2">
+
+    <ul class="nav tabs-cyan" id="myClassicTabShadow" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link  waves-light active show" ng-click="ev($event)" id="profile-tab-classic-shadow" data-toggle="tab" href="#profile-classic-shadow"
+          role="tab" aria-controls="profile-classic-shadow" aria-selected="true">{{sideNav[langInd].dropTi[0]}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" ng-click="ev($event)" id="follow-tab-classic-shadow" data-toggle="tab" href="#follow-classic-shadow"
+          role="tab" aria-controls="follow-classic-shadow" aria-selected="false">{{sideNav[langInd].dropTi[1]}}</a>
+      </li>
+    </ul>
+  
+    <div class="tab-content p-4" id="myClassicTabContentShadow">
+      <div class="tab-pane fade active show" id="profile-classic-shadow" role="tabpanel" aria-labelledby="profile-tab-classic-shadow">
+        <div class="row ">
+                <div class="col-md-3" ng-repeat="item in storeP[langInd]">
+                    <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="{{item.img}}" alt="Card image cap">
+                        
+                            <!-- Card content -->
+                            <div class="card-body">
+                        
+                            <!-- Title -->
+                            <h4 class="card-title"><a>{{item.name}}</a></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{storeProduct[langInd].desc}}</p>
+                            <p class="card-text">{{item.price}}</p>
+                            <!-- Button -->
+                            <div class="button-card text-center">
+                            <a href="#" class="btn btn-outline-secondary rounded"><i class="fa fa-shopping-cart"></i> {{storeProduct[langInd].cart}}</a>
+                            </div>
+                        
+                            </div>
+                        
+                        </div>
+  <!-- Card -->
+                </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="follow-classic-shadow" role="tabpanel" aria-labelledby="follow-tab-classic-shadow">
+        <div class="row p-4">
+                <div class="col-md-3" ng-repeat="item in storeP[langInd]">
+                                                <!-- Card -->
+                       <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="{{item.img}}" alt="Card image cap">
+                        
+                            <!-- Card content -->
+                            <div class="card-body">
+                        
+                            <!-- Title -->
+                            <h4 class="card-title"><a>{{item.name}}</a></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{storeProduct[langInd].desc}}</p>
+                            <p class="card-text">{{item.price}}</p>
+                            <!-- Button -->
+                            <div class="button-card text-center">
+                            <a href="#" class="btn btn-outline-secondary rounded"><i class="fa fa-shopping-cart"></i> {{storeProduct[langInd].cart}}</a>
+                            </div>
+                        
+                            </div>
+                        
+                        </div>
+  <!-- Card -->
+                    </div>
+        </div>
+    </div>
+     
+    </div>
+  
+  </div>
+  <!-- Classic tabs -->
+                
+                </div>
+            </div>
+    </setion>
+</div>
