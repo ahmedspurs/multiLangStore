@@ -8,7 +8,7 @@ $rootScope.ev = function(event){
 
     $rootScope.navbar=[
         {
-            home:"STORE",store:"STORE",contact:"CONTACT US"
+            home:"HOME",store:"STORE",contact:"CONTACT US"
         },
         {
             home:"الرئيسية",store:"المتجر",contact:"تواصل معنا"
